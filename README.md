@@ -14,6 +14,7 @@ npm install gulp-stylelint-checkstyle-reporter --save-dev
 ## Quick start
 
 ```js
+import gulpStylelint from 'gulp-stylelint';
 import checkstyleReporter from 'gulp-stylelint-checkstyle-reporter';
 
 gulp.task('lint-css', function lintCssTask() {
