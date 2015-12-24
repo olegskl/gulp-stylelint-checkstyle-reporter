@@ -1,6 +1,6 @@
 {
   "name": "gulp-stylelint-checkstyle-reporter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gulp-stylelint reporter that writes stylelint results to xml file in checkstyle plugin format",
   "main": "lib/index.js",
   "scripts": {
