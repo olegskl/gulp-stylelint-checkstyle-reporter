@@ -37,4 +37,4 @@ var checkstyleReporter = require('gulp-stylelint-checkstyle-reporter').default;
 
 ## License
 
-http://opensource.org/licenses/mit-license.html
+[MIT License](http://opensource.org/licenses/MIT)
