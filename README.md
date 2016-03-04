@@ -2,6 +2,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/gulp-stylelint-checkstyle-reporter.svg)](https://www.npmjs.org/package/gulp-stylelint-checkstyle-reporter)
 [![Build Status](https://travis-ci.org/olegskl/gulp-stylelint-checkstyle-reporter.svg?branch=master)](https://travis-ci.org/olegskl/gulp-stylelint-checkstyle-reporter)
+[![Join the chat at https://gitter.im/olegskl/gulp-stylelint](https://badges.gitter.im/olegskl/gulp-stylelint.svg)](https://gitter.im/olegskl/gulp-stylelint?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A [gulp-stylelint](https://github.com/olegskl/gulp-stylelint) reporter to display [stylelint](https://github.com/stylelint/stylelint) results in checkstyle.
 
