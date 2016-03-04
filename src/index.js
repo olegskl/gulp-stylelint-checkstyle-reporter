@@ -23,26 +23,16 @@ function stylelintToCheckstyleMessageAdapter(message) {
 }
 
 /**
- * Takes Stylelint messages and adapts them to Checkstyle format.
- * @param  {Array<Object>} messageList List of messages in Stylelint format.
- * @return {Array<Object>}             List of messages in Checkstyle format.
- */
-function stylelintToCheckstyleMessageListAdapter(messageList) {
-  return messageList.map(stylelintToCheckstyleMessageAdapter);
-}
-
-/**
  * Adapts a Stylelint processed file result to Checkstyle format.
  * @param  {Object} result Stylelint result.
  * @return {Object}        Checkstyle result.
  */
 function stylelineToCheckstyleResultAdapter(result) {
   const filename = result.source || result.opts.from;
-  const messages = result.warnings || result.messages;
-  return {
-    filename,
-    messages: stylelintToCheckstyleMessageListAdapter(messages)
-  };
+  const messages = (result.warnings || result.messages).map(
+    stylelintToCheckstyleMessageAdapter
+  );
+  return {filename, messages};
 }
 
 /**
