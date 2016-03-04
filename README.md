@@ -1,5 +1,6 @@
 # gulp-stylelint-checkstyle-reporter
 
+[![NPM version](http://img.shields.io/npm/v/gulp-stylelint-checkstyle-reporter.svg)](https://www.npmjs.org/package/gulp-stylelint-checkstyle-reporter)
 [![Build Status](https://travis-ci.org/olegskl/gulp-stylelint-checkstyle-reporter.svg?branch=master)](https://travis-ci.org/olegskl/gulp-stylelint-checkstyle-reporter)
 
 A [gulp-stylelint](https://github.com/olegskl/gulp-stylelint) reporter to display [stylelint](https://github.com/stylelint/stylelint) results in checkstyle.
