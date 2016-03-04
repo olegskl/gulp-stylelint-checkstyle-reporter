@@ -6,7 +6,6 @@
 import fsp from 'fs-promise';
 import path from 'path';
 import mkdirp from 'mkdirp-promise';
-import process from 'process';
 import checkstyleFormatter from 'checkstyle-formatter';
 
 /**
