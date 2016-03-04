@@ -37,9 +37,11 @@ function stylelintToCheckstyleMessageListAdapter(messageList) {
  * @return {Object}        Checkstyle result.
  */
 function stylelineToCheckstyleResultAdapter(result) {
+  const filename = result.source || result.opts.from;
+  const messages = result.warnings || result.messages;
   return {
-    filename: result.opts.from,
-    messages: stylelintToCheckstyleMessageListAdapter(result.messages)
+    filename,
+    messages: stylelintToCheckstyleMessageListAdapter(messages)
   };
 }
 
@@ -50,7 +52,7 @@ function stylelineToCheckstyleResultAdapter(result) {
  */
 function stylelintToCheckstyleResultListAdapter(resultList) {
   return resultList
-    .filter(result => result.messages.length > 0)
+    .filter(result => (result.warnings || result.messages).length > 0)
     .map(stylelineToCheckstyleResultAdapter);
 }
 
